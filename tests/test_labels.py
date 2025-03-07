@@ -6,6 +6,8 @@ from selene.support.shared.jquery_style import s
 
 #используется, когда пишутся тесты как требования. В аллюре владка Behaviors
 
+def test_no_labels():
+    pass
 def test_dynamic_labels():
     allure.dynamic.tag("web")
     allure.dynamic.severity(Severity.BLOCKER)
