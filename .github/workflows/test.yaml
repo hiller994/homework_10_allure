@@ -20,8 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           pytest --alluredir=allure-results
-          
-#https://github.com/marketplace/actions/allure-report-with-history
+
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
@@ -33,7 +32,7 @@ jobs:
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: allure-results #дериктория аллюр
+          allure_results: allure-results
           allure_history: allure-history
           keep_reports: 20
       - name: Deploy report to Github Pages
