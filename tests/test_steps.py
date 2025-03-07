@@ -20,7 +20,7 @@ def test_dynamic_steps():
         browser.element('#actions-tab').click()
 
     while allure.step('Ищем нужный номер workflow'):
-        browser.element(by.partial_text('#1278')).should(be.visible)
+        browser.element(by.partial_text('#278')).should(be.visible)
 
 #---------------------------------------------------
 #---------------------------------------------------
